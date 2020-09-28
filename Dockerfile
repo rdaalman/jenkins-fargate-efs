@@ -1,6 +1,6 @@
 from jenkins/jenkins:lts
 
-USER root
+USER jenkins
 
 
 RUN chown -R 1000 /var
