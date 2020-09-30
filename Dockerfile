@@ -1,6 +1,7 @@
-from jenkins/jenkins:lts
+FROM jenkins/jenkins:lts
 
-USER jenkins
+USER root
 
+RUN apt-get update
 
-RUN sudo chown -R 1000 /var
+RUN curl -sSL https://get.docker.com/ | sh
